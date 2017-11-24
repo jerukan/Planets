@@ -1,0 +1,34 @@
+{
+	"mercury": {
+		"name": "Mercury",
+		"apoapsis": 69816900.0,
+		"periapsis": 46001200.0,
+		"semimajor_axis": 57909050.0,
+		"eccentricity": 0.205630,
+		"avg_orbital_speed": 47.362
+	},
+	"venus": {
+		"name": "Venus",
+		"apoapsis": 108939000.0,
+		"periapsis": 107477000.0,
+		"semimajor_axis": 108208000.0,
+		"eccentricity": 0.006772,
+		"avg_orbital_speed": 35.02
+	},
+	"earth": {
+		"name": "Earth",
+		"apoapsis": 152100000.0,
+		"periapsis": 147095000.0,
+		"semimajor_axis": 149598023.0,
+		"eccentricity": 0.0167086,
+		"avg_orbital_speed": 29.78
+	},
+	"mars": {
+		"name": "Mars",
+		"apoapsis": 249200000.0,
+		"periapsis": 206700000.0,
+		"semimajor_axis": 227939200.0,
+		"eccentricity": 0.0934,
+		"avg_orbital_speed": 24.077
+	}
+}
