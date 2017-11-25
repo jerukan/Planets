@@ -34,5 +34,50 @@
 		"semimajor_axis": 227939200.0,
 		"eccentricity": 0.0934,
 		"avg_orbital_speed": 24.077
+	},
+	"jupiter": {
+		"name": "Jupiter",
+		"radius": 69911.0,
+		"apoapsis": 816620000.0,
+		"periapsis": 740520000.0,
+		"semimajor_axis": 778570000.0,
+		"eccentricity": 0.0489,
+		"avg_orbital_speed": 13.07
+	},
+	"saturn": {
+		"name": "Saturn",
+		"radius": 58232.0,
+		"apoapsis": 1514500000.0,
+		"periapsis": 1352550000.0,
+		"semimajor_axis": 1433530000.0,
+		"eccentricity": 0.0565,
+		"avg_orbital_speed": 9.68
+	},
+	"uranus": {
+		"name": "Uranus",
+		"radius": 25362.0,
+		"apoapsis": 3008000000.0,
+		"periapsis": 2742000000.0,
+		"semimajor_axis": 2875040000.0 ,
+		"eccentricity": 0.046381,
+		"avg_orbital_speed": 6.80
+	},
+	"neptune": {
+		"name": "Neptune",
+		"radius": 24622.0,
+		"apoapsis": 4540000000.0,
+		"periapsis": 4460000000.0,
+		"semimajor_axis": 4500000000.0,
+		"eccentricity": 0.009456,
+		"avg_orbital_speed": 5.43
+	},
+	"pluto": {
+		"name": "Pluto",
+		"radius": 1188.3,
+		"apoapsis": 7375930000.0,
+		"periapsis": 4436820000.0,
+		"semimajor_axis": 5906380000.0,
+		"eccentricity": 0.2488,
+		"avg_orbital_speed": 4.67
 	}
 }

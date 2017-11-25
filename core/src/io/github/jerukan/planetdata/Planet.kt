@@ -28,6 +28,6 @@ class Planet(planetname: String) {
             semimajor_axis_drawn / 2).toFloat(), (semiminor_axis_drawn * Math.sin(0.0) + Renderer.originy - semiminor_axis_drawn / 2).toFloat())
 
     fun updatePos(time: Double) {
-        screen_pos.setPos((semimajor_axis_drawn * Math.cos(time) + orbit.offsetx + Renderer.originx).toFloat(), (semiminor_axis_drawn * Math.sin(time) + Renderer.originy).toFloat())
+        screen_pos.setPos((semimajor_axis_drawn * Math.cos(time * avg_orbital_speed) + orbit.offsetx + Renderer.originx).toFloat(), (semiminor_axis_drawn * Math.sin(time * avg_orbital_speed) + Renderer.originy).toFloat())
     }
 }
