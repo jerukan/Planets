@@ -1,6 +1,7 @@
 {
 	"mercury": {
 		"name": "Mercury",
+		"radius": 2439.7,
 		"apoapsis": 69816900.0,
 		"periapsis": 46001200.0,
 		"semimajor_axis": 57909050.0,
@@ -9,6 +10,7 @@
 	},
 	"venus": {
 		"name": "Venus",
+		"radius": 6051.8,
 		"apoapsis": 108939000.0,
 		"periapsis": 107477000.0,
 		"semimajor_axis": 108208000.0,
@@ -17,6 +19,7 @@
 	},
 	"earth": {
 		"name": "Earth",
+		"radius": 6371.0,
 		"apoapsis": 152100000.0,
 		"periapsis": 147095000.0,
 		"semimajor_axis": 149598023.0,
@@ -25,6 +28,7 @@
 	},
 	"mars": {
 		"name": "Mars",
+		"radius": 3389.5,
 		"apoapsis": 249200000.0,
 		"periapsis": 206700000.0,
 		"semimajor_axis": 227939200.0,

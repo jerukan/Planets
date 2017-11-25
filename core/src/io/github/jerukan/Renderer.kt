@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.GL20
 import com.badlogic.gdx.graphics.OrthographicCamera
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer
 import io.github.jerukan.planetdata.Planets
+import io.github.jerukan.util.Utils
 
 class Renderer {
     companion object {
@@ -16,10 +17,18 @@ class Renderer {
             shapeRenderer.setAutoShapeType(true)
             Gdx.gl20.glEnable(GL20.GL_BLEND)
             Gdx.gl20.glBlendFunc(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA)
-            shapeRenderer.begin()
-            shapeRenderer.set(ShapeRenderer.ShapeType.Line)
+            shapeRenderer.begin(ShapeRenderer.ShapeType.Line)
             shapeRenderer.setColor(1f, 1f, 1f, 1f)
-            shapeRenderer.ellipse(Planets.mercury.orbit.ellipse.x, Planets.mercury.orbit.ellipse.y, Planets.mercury.orbit.ellipse.width, Planets.mercury.orbit.ellipse.height)
+            for(planet in Planets.planetlist) {
+                shapeRenderer.ellipse(planet.orbit.ellipse.x, planet.orbit.ellipse.y, planet.orbit.ellipse.width, planet.orbit.ellipse.height)
+            }
+            shapeRenderer.end()
+
+            shapeRenderer.begin(ShapeRenderer.ShapeType.Filled)
+            shapeRenderer.circle(SolarSystem.SolarSystem.sunpos.x - Utils.sun_draw_radius, SolarSystem.SolarSystem.sunpos.y - Utils.sun_draw_radius, Utils.sun_draw_radius)
+            for(planet in Planets.planetlist) {
+                shapeRenderer.circle(planet.screen_pos.x, planet.screen_pos.y, planet.radius_drawn.toFloat())
+            }
             shapeRenderer.end()
             Gdx.gl20.glDisable(GL20.GL_BLEND)
         }

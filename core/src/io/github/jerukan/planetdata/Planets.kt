@@ -5,5 +5,7 @@ class Planets {
         var mercury: Planet = Planet("mercury")
         var venus: Planet = Planet("venus")
         var earth: Planet = Planet("earth")
+
+        var planetlist: Array<Planet> = arrayOf(mercury, venus, earth)
     }
 }
