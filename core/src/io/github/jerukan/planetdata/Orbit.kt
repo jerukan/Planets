@@ -8,7 +8,7 @@ class Orbit(var semimajor_axis: Double, var semiminor_axis: Double, var apoapsis
 
     var offsetx: Double = (apoapsis - semimajor_axis) / Utils.km_multiplier
 
-    var ellipse: Ellipse = Ellipse((Renderer.originx + offsetx).toFloat() - semimajor_axis.toFloat() / Utils.km_multiplier / 2,
-            Renderer.originy - semiminor_axis.toFloat() / Utils.km_multiplier / 2, semimajor_axis.toFloat() / Utils.km_multiplier,
-            semiminor_axis.toFloat() / Utils.km_multiplier)
+    var ellipse: Ellipse = Ellipse((Renderer.originx + offsetx).toFloat() - semimajor_axis.toFloat() / Utils.km_multiplier,
+            Renderer.originy - semiminor_axis.toFloat() / Utils.km_multiplier, semimajor_axis.toFloat() * 2 / Utils.km_multiplier,
+            semiminor_axis.toFloat() * 2 / Utils.km_multiplier)
 }
