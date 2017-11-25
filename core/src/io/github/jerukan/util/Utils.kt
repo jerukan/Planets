@@ -8,6 +8,6 @@ class Utils {
         val planet_size_multipler: Float = 2000f  //make planets more visible(?)
         val sun_radius: Float = 695700f
         val sun_draw_radius: Float = sun_radius / km_multiplier * 50 //to make sun not a tiny dot
-        val t_step: Double = 0.0005
+        val t_step: Double = 0.0003
     }
 }

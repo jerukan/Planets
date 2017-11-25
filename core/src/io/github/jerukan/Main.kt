@@ -27,7 +27,7 @@ class Main : Game() {
         SolarSystem.SolarSystem.updatePositions(time)
         Gdx.gl.glClearColor(0f, 0f, 0f, 1f)
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT)
-        Renderer.render()
+        Renderer.render(batch)
         batch.begin()
         batch.end()
     }
